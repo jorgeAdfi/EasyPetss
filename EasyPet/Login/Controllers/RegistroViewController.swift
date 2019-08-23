@@ -24,15 +24,18 @@ class RegistroViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var celular: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var fechaNac: UITextField!
+    @IBOutlet weak var profileImage: UIImageView!
     
     let sendRegistroURL = "http://easypets.mx/ws/createUser.php"
-    
+    let imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupFormat()
         setupKeyboard()
         scrollView.contentInsetAdjustmentBehavior = .automatic
+        
+        imagePicker.delegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -139,7 +142,9 @@ class RegistroViewController: UIViewController,UITextFieldDelegate {
     }
     
     @IBAction func chooseImage(_ sender: Any) {
-        
+        imagePicker.allowsEditing = true
+        imagePicker.sourceType = .photoLibrary
+        self.present(imagePicker, animated: true, completion: nil)
     }
     
     @IBAction func chooseFechaNac(_ sender: Any) {
@@ -160,4 +165,18 @@ class RegistroViewController: UIViewController,UITextFieldDelegate {
         self.view.endEditing(true)
         return false
     }
+}
+
+extension RegistroViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            profileImage
+                .contentMode = .scaleAspectFit
+            profileImage.image = pickedImage
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
 }

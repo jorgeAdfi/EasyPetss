@@ -114,9 +114,9 @@
                                                                         <constraint firstAttribute="height" constant="80" id="XW6-rA-RtZ"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spike" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfd-FE-kQI">
-                                                                    <rect key="frame" x="0.0" y="85" width="80" height="15.5"/>
-                                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spike" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfd-FE-kQI">
+                                                                    <rect key="frame" x="0.0" y="85" width="80" height="13"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -545,7 +545,9 @@
         <scene sceneID="pnF-0U-plh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mTR-Q3-Qks" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="home_2" id="4YH-pt-V59"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home_2" id="4YH-pt-V59">
+                        <inset key="imageInsets" minX="-6" minY="6" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mom-Qp-efk">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -565,7 +567,9 @@
         <scene sceneID="bor-i1-c3a">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QGn-GU-QjB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Carrito" image="carrito_1" id="Fv4-Tz-ahR"/>
+                    <tabBarItem key="tabBarItem" title="Carrito" image="carrito_1" id="Fv4-Tz-ahR">
+                        <inset key="imageInsets" minX="6" minY="-6" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="j82-Jj-S9I">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -698,7 +702,9 @@
         <scene sceneID="2Xz-JF-erN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="79M-M4-bGo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Agenda" image="agenda_1" id="WTn-Vh-9BA"/>
+                    <tabBarItem key="tabBarItem" title="Agenda" image="agenda_1" id="WTn-Vh-9BA">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="-6" maxY="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zkx-Uo-cP7">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -718,7 +724,9 @@
         <scene sceneID="ILR-3O-Myn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C8D-iE-p30" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Mensajes" image="mensaje_1" id="ori-mZ-0vU"/>
+                    <tabBarItem key="tabBarItem" title="Mensajes" image="mensaje_1" id="ori-mZ-0vU">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="-6" maxY="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="75m-hR-mo6">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -738,7 +746,9 @@
         <scene sceneID="4Ii-Q6-bEQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jy7-Dy-fiX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Pet Club" image="petclub_1" id="pNg-Rh-giK"/>
+                    <tabBarItem key="tabBarItem" title="Pet Club" image="petclub_1" id="pNg-Rh-giK">
+                        <inset key="imageInsets" minX="-4" minY="4" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iaP-xu-dwc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

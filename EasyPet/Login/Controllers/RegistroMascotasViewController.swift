@@ -56,7 +56,7 @@ class RegistroMascotasViewController: UIViewController, UITextFieldDelegate, UIT
         var arrayColores = [String]()
         var arrayRazas = [String]()
         var arrayTallas = [String]()
-        var razas = [Raza]()
+        let razas = [Raza]()
         
         talla.theme.font = UIFont.systemFont(ofSize: 20)
         talla.theme.cellHeight = 50

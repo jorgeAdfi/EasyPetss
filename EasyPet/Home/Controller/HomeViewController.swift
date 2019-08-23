@@ -13,7 +13,7 @@ import SwiftyJSON
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
-    let get_MascotasURL = "http://easypets.mx/ws/getMascotas.php"
+    let get_MascotasURL = "http://easypets.mx/ws/getMascota.php"
 
     @IBOutlet weak var sideBar          : UIView!
     @IBOutlet weak var leftMargin       : NSLayoutConstraint!
@@ -25,6 +25,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var contentView: UIView!
     
     @IBOutlet weak var viewFondo: UIView!
+    
+    var misAnimales = [Animal]()
     
     let opcionesMenu = [0:"Mi cuenta",
                         1:"Favoritos",
@@ -52,6 +54,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         setupCollectionView()
         setupViewFondo()
         scrollView.contentInsetAdjustmentBehavior = .automatic
+        getMisMascotas()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -75,16 +78,44 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         print("DATA: \(arrayString.joined(separator:"&"))")
         
-        Alamofire.request(url, method: .get, parameters: parameters).responseJSON{
+        Alamofire.request(url, method: .post, parameters: parameters).responseJSON{
             response in
             if response.result.isSuccess{
                 let responseJSON : JSON = JSON(response.result.value!)
-                self.presentAlert(responseJSON["mensajeServer"].stringValue)
-                
+                self.updateInterfaceMascotas(json: responseJSON)
             }else{
                 let responseJSON : JSON = JSON(response.result.value!)
                 self.presentAlert(responseJSON["mensajeServer"].stringValue)
             }
+        }
+    }
+    
+    func updateInterfaceMascotas(json : JSON) {
+        print(json)
+        if(json["mascotas"].count == 0) {
+            print("no llegaron contenidos");
+            
+        }else{
+            for index in 0...json["mascotas"].count - 1{
+                let animal = Animal()
+                
+                animal.idAnimal     = json["mascotas"][index]["idAnimal"].int64Value
+                animal.nombreAnimal = json["mascotas"][index]["nombre"].stringValue
+                animal.idMascota    = json["mascotas"][index]["idMascota"].intValue
+                animal.idRaza       = json["mascotas"][index]["idRaza"].intValue
+                animal.sexo         = json["mascotas"][index]["sexo"].intValue
+                animal.peso         = json["mascotas"][index]["peso"].floatValue
+                animal.talla        = json["mascotas"][index]["talla"].intValue
+                animal.color        = json["mascotas"][index]["color"].stringValue
+                animal.esterilizado = json["mascotas"][index]["esterilizado"].intValue
+                animal.cuidados     = json["mascotas"][index]["cuidados"].stringValue
+                
+                misAnimales.append(animal)
+            }
+            
+            print("LLEGA REFRESH END")
+            
+            collectionViewPets.reloadData()
         }
     }
     
@@ -177,16 +208,23 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSource{
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return mascotasTest.count
+        return misAnimales.count
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "mascotaCell", for: indexPath)
         
-        if let imageView = cell.viewWithTag(100) as? UIImageView{
-            imageView.image = UIImage.init(named: mascotasTest[indexPath.row])
-            imageView.layer.masksToBounds = true
-            imageView.layer.cornerRadius = 40
+//        if let imageView = cell.viewWithTag(100) as? UIImageView{
+//            imageView.image = UIImage.init(named: misAnimales[indexPath.row])
+//            imageView.layer.masksToBounds = true
+//            imageView.layer.cornerRadius = 40
+//        }
+        
+        print(misAnimales[indexPath.row].nombreAnimal!)
+        
+        if let labelMascota = cell.viewWithTag(101) as? UILabel{
+            labelMascota.text = misAnimales[indexPath.row].nombreAnimal!
+            
         }
         
         return cell
