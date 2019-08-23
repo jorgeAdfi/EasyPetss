@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>924266909067-0gpp6asd54vv6vemd0d8obl5jrdf93r2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.924266909067-0gpp6asd54vv6vemd0d8obl5jrdf93r2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC4h4aVZdJZj35c7wftSlJ-FXRWbnFty0Q</string>
+	<key>GCM_SENDER_ID</key>
+	<string>924266909067</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>mx.easypets.demo.EasyPet</string>
+	<key>PROJECT_ID</key>
+	<string>easypets-30231</string>
+	<key>STORAGE_BUCKET</key>
+	<string>easypets-30231.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:924266909067:ios:39333113c538a400</string>
+	<key>DATABASE_URL</key>
+	<string>https://easypets-30231.firebaseio.com</string>
+</dict>
+</plist>

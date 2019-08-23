@@ -1,0 +1,6 @@
+framework module Pods_EasyPet {
+  umbrella header "Pods-EasyPet-umbrella.h"
+
+  export *
+  module * { export * }
+}
