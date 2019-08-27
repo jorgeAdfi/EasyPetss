@@ -220,10 +220,10 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
 //            imageView.layer.cornerRadius = 40
 //        }
         
-        print(misAnimales[indexPath.row].nombreAnimal!)
+        print(misAnimales[indexPath.row].nombreAnimal)
         
         if let labelMascota = cell.viewWithTag(101) as? UILabel{
-            labelMascota.text = misAnimales[indexPath.row].nombreAnimal!
+            labelMascota.text = misAnimales[indexPath.row].nombreAnimal
             
         }
         

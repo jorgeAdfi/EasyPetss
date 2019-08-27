@@ -29,6 +29,7 @@ class RegistroViewController: UIViewController,UITextFieldDelegate {
     let sendRegistroURL = "http://easypets.mx/ws/createUser.php"
     let imagePicker = UIImagePickerController()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupFormat()

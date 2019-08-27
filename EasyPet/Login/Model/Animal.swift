@@ -8,9 +8,9 @@
 
 import Foundation
 
-class Animal {
+class Animal : NSObject{
     var idAnimal        : Int64
-    var nombreAnimal    : String?
+    var nombreAnimal    : String
     var idMascota       : Int
     var idRaza          : Int
     var sexo            : Int
@@ -33,7 +33,7 @@ class Animal {
         self.cuidados       = cuidados
     }
     
-    init() {
+    override init() {
         self.idAnimal       = 0
         self.nombreAnimal   = ""
         self.idMascota      = 0

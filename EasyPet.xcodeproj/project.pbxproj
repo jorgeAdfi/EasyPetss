@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		78D18C46786AD50D16926651 /* Pods_EasyPet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B4054513AD8FB4A6A05DFC /* Pods_EasyPet.framework */; };
 		CF137674230C3AF800676042 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF137673230C3AF800676042 /* HomeViewController.swift */; };
+		CF3865092315A29A006BAEC6 /* NSObject+ListDiffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3865082315A29A006BAEC6 /* NSObject+ListDiffable.swift */; };
+		CF38650B2315A38B006BAEC6 /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF38650A2315A38B006BAEC6 /* NewsFeedViewController.swift */; };
+		CF68E17D2315B12C00F47B5F /* MascotaSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF68E17C2315B12C00F47B5F /* MascotaSectionController.swift */; };
+		CF68E1812315B31600F47B5F /* TextSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF68E1802315B31600F47B5F /* TextSize.swift */; };
+		CF68E1832315B39E00F47B5F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF68E1822315B39E00F47B5F /* Theme.swift */; };
+		CF68E1852315CA9400F47B5F /* MascotaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF68E1842315CA9400F47B5F /* MascotaCollectionViewCell.swift */; };
+		CF68E1872315CAC100F47B5F /* MascotaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF68E1862315CAC100F47B5F /* MascotaCell.xib */; };
+		CF75DAE82315D79D00D5DE1D /* NibSelfSizingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF75DAE62315D79C00D5DE1D /* NibSelfSizingCell.xib */; };
+		CF75DAE92315D79D00D5DE1D /* NibSelfSizingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF75DAE72315D79D00D5DE1D /* NibSelfSizingCell.swift */; };
 		CF7652F4230216A4004D3DAD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF7652F3230216A4004D3DAD /* GoogleService-Info.plist */; };
 		CF7652F623032D29004D3DAD /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7652F523032D29004D3DAD /* Usuario.swift */; };
 		CF7652F82303308E004D3DAD /* RegistroMascotasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7652F72303308E004D3DAD /* RegistroMascotasViewController.swift */; };
@@ -29,12 +38,6 @@
 		CFF453EC2301E8060001F1DB /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF453EB2301E8060001F1DB /* RegistroViewController.swift */; };
 		CFF453EE2301E80F0001F1DB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF453ED2301E80F0001F1DB /* LoginViewController.swift */; };
 		CFF75CD4230EF59000E8D7DB /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF75CD3230EF59000E8D7DB /* Utilities.swift */; };
-		CFF9F41B230C9A7000B28470 /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF9F41A230C9A7000B28470 /* AgendaViewController.swift */; };
-		CFF9F41D230C9A7D00B28470 /* MensajesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF9F41C230C9A7D00B28470 /* MensajesViewController.swift */; };
-		CFF9F41F230C9A8800B28470 /* PetclubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF9F41E230C9A8800B28470 /* PetclubViewController.swift */; };
-		CFF9F421230C9A8F00B28470 /* CarritoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF9F420230C9A8F00B28470 /* CarritoViewController.swift */; };
-		CFF9F423230DB04200B28470 /* PromocionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF9F422230DB04200B28470 /* PromocionesViewController.swift */; };
-		CFF9F425230DBA1400B28470 /* ProveedoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF9F424230DBA1400B28470 /* ProveedoresViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,15 @@
 		4CEBCE1B8EB476BD13825F9A /* Pods-EasyPet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyPet.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyPet/Pods-EasyPet.release.xcconfig"; sourceTree = "<group>"; };
 		8019788585947FE6F37B5CB0 /* Pods-EasyPet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyPet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyPet/Pods-EasyPet.debug.xcconfig"; sourceTree = "<group>"; };
 		CF137673230C3AF800676042 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CF3865082315A29A006BAEC6 /* NSObject+ListDiffable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ListDiffable.swift"; sourceTree = "<group>"; };
+		CF38650A2315A38B006BAEC6 /* NewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
+		CF68E17C2315B12C00F47B5F /* MascotaSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MascotaSectionController.swift; sourceTree = "<group>"; };
+		CF68E1802315B31600F47B5F /* TextSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSize.swift; sourceTree = "<group>"; };
+		CF68E1822315B39E00F47B5F /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		CF68E1842315CA9400F47B5F /* MascotaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MascotaCollectionViewCell.swift; sourceTree = "<group>"; };
+		CF68E1862315CAC100F47B5F /* MascotaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MascotaCell.xib; sourceTree = "<group>"; };
+		CF75DAE62315D79C00D5DE1D /* NibSelfSizingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibSelfSizingCell.xib; sourceTree = "<group>"; };
+		CF75DAE72315D79D00D5DE1D /* NibSelfSizingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibSelfSizingCell.swift; sourceTree = "<group>"; };
 		CF7652F3230216A4004D3DAD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF7652F523032D29004D3DAD /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		CF7652F72303308E004D3DAD /* RegistroMascotasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroMascotasViewController.swift; sourceTree = "<group>"; };
@@ -64,12 +76,6 @@
 		CFF453EB2301E8060001F1DB /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 		CFF453ED2301E80F0001F1DB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CFF75CD3230EF59000E8D7DB /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		CFF9F41A230C9A7000B28470 /* AgendaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
-		CFF9F41C230C9A7D00B28470 /* MensajesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensajesViewController.swift; sourceTree = "<group>"; };
-		CFF9F41E230C9A8800B28470 /* PetclubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetclubViewController.swift; sourceTree = "<group>"; };
-		CFF9F420230C9A8F00B28470 /* CarritoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarritoViewController.swift; sourceTree = "<group>"; };
-		CFF9F422230DB04200B28470 /* PromocionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromocionesViewController.swift; sourceTree = "<group>"; };
-		CFF9F424230DBA1400B28470 /* ProveedoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProveedoresViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,10 @@
 		CF137671230C3AD900676042 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CF75DAE72315D79D00D5DE1D /* NibSelfSizingCell.swift */,
+				CF75DAE62315D79C00D5DE1D /* NibSelfSizingCell.xib */,
+				CF68E1842315CA9400F47B5F /* MascotaCollectionViewCell.swift */,
+				CF68E1862315CAC100F47B5F /* MascotaCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -121,14 +131,17 @@
 			isa = PBXGroup;
 			children = (
 				CF137673230C3AF800676042 /* HomeViewController.swift */,
-				CFF9F41A230C9A7000B28470 /* AgendaViewController.swift */,
-				CFF9F41C230C9A7D00B28470 /* MensajesViewController.swift */,
-				CFF9F41E230C9A8800B28470 /* PetclubViewController.swift */,
-				CFF9F420230C9A8F00B28470 /* CarritoViewController.swift */,
-				CFF9F422230DB04200B28470 /* PromocionesViewController.swift */,
-				CFF9F424230DBA1400B28470 /* ProveedoresViewController.swift */,
+				CF38650A2315A38B006BAEC6 /* NewsFeedViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF38650D2315B0DF006BAEC6 /* SectionController */ = {
+			isa = PBXGroup;
+			children = (
+				CF68E17C2315B12C00F47B5F /* MascotaSectionController.swift */,
+			);
+			path = SectionController;
 			sourceTree = "<group>";
 		};
 		CF7652F02301FFD0004D3DAD /* Login */ = {
@@ -144,6 +157,9 @@
 		CF76530523046C67004D3DAD /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				CF3865082315A29A006BAEC6 /* NSObject+ListDiffable.swift */,
+				CF68E1822315B39E00F47B5F /* Theme.swift */,
+				CF68E1802315B31600F47B5F /* TextSize.swift */,
 				CF76538C2305B202004D3DAD /* CheckBox.swift */,
 				CFCC3BB72305DDD70078F7F7 /* DatabaseManager.swift */,
 				CFF75CD3230EF59000E8D7DB /* Utilities.swift */,
@@ -183,6 +199,7 @@
 		CFF453D12301CF9D0001F1DB /* EasyPet */ = {
 			isa = PBXGroup;
 			children = (
+				CF38650D2315B0DF006BAEC6 /* SectionController */,
 				CF13766F230C3AC600676042 /* Home */,
 				CFCC3BC023064AA50078F7F7 /* animations */,
 				CF76530523046C67004D3DAD /* Utilities */,
@@ -297,6 +314,8 @@
 				CFF453E52301D2E50001F1DB /* Login.storyboard in Resources */,
 				CF765302230364F4004D3DAD /* raton.gif in Resources */,
 				CFF453DD2301CF9F0001F1DB /* LaunchScreen.storyboard in Resources */,
+				CF75DAE82315D79D00D5DE1D /* NibSelfSizingCell.xib in Resources */,
+				CF68E1872315CAC100F47B5F /* MascotaCell.xib in Resources */,
 				CF7652F4230216A4004D3DAD /* GoogleService-Info.plist in Resources */,
 				CF765304230369CE004D3DAD /* loading.gif in Resources */,
 				CFF453DA2301CF9F0001F1DB /* Assets.xcassets in Resources */,
@@ -325,6 +344,7 @@
 				"${BUILT_PRODUCTS_DIR}/FBSDKPlacesKit/FBSDKPlacesKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
@@ -345,6 +365,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKPlacesKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
@@ -388,24 +409,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFCC3BB82305DDD70078F7F7 /* DatabaseManager.swift in Sources */,
-				CFF9F41B230C9A7000B28470 /* AgendaViewController.swift in Sources */,
+				CF3865092315A29A006BAEC6 /* NSObject+ListDiffable.swift in Sources */,
 				CFF453EE2301E80F0001F1DB /* LoginViewController.swift in Sources */,
-				CFF9F425230DBA1400B28470 /* ProveedoresViewController.swift in Sources */,
-				CFF9F423230DB04200B28470 /* PromocionesViewController.swift in Sources */,
 				CFCC3BBF23060A630078F7F7 /* Color.swift in Sources */,
 				CF7652F82303308E004D3DAD /* RegistroMascotasViewController.swift in Sources */,
 				CFF453EC2301E8060001F1DB /* RegistroViewController.swift in Sources */,
 				CF76538D2305B202004D3DAD /* CheckBox.swift in Sources */,
-				CFF9F41F230C9A8800B28470 /* PetclubViewController.swift in Sources */,
+				CF68E1832315B39E00F47B5F /* Theme.swift in Sources */,
 				CF7652F623032D29004D3DAD /* Usuario.swift in Sources */,
-				CFF9F421230C9A8F00B28470 /* CarritoViewController.swift in Sources */,
 				CF76530023035813004D3DAD /* SplashViewController.swift in Sources */,
+				CF68E17D2315B12C00F47B5F /* MascotaSectionController.swift in Sources */,
+				CF68E1852315CA9400F47B5F /* MascotaCollectionViewCell.swift in Sources */,
 				CFF75CD4230EF59000E8D7DB /* Utilities.swift in Sources */,
+				CF68E1812315B31600F47B5F /* TextSize.swift in Sources */,
 				CFCC3BBD23060A550078F7F7 /* Raza.swift in Sources */,
+				CF75DAE92315D79D00D5DE1D /* NibSelfSizingCell.swift in Sources */,
 				CFF453D32301CF9D0001F1DB /* AppDelegate.swift in Sources */,
 				CFCC3BBB230605AC0078F7F7 /* Animal.swift in Sources */,
-				CFF9F41D230C9A7D00B28470 /* MensajesViewController.swift in Sources */,
 				CF137674230C3AF800676042 /* HomeViewController.swift in Sources */,
+				CF38650B2315A38B006BAEC6 /* NewsFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -42,6 +42,7 @@ class RegistroMascotasViewController: UIViewController, UITextFieldDelegate, UIT
     var idTalla : String = ""
     
     let sendRegistroMascotaURL = "http://easypets.mx/ws/saveMascota.php"
+    let imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -216,7 +217,7 @@ class RegistroMascotasViewController: UIViewController, UITextFieldDelegate, UIT
     
     
     @objc func keyboardWillHide(notification: NSNotification) {
-        scrollView.contentSize = CGSize(width: scrollView.frame.width, height: 935)
+        scrollView.contentSize = CGSize(width: scrollView.frame.width, height: 1031.0)
         self.view.layoutIfNeeded()
     }
     
@@ -284,6 +285,11 @@ class RegistroMascotasViewController: UIViewController, UITextFieldDelegate, UIT
     }
     
     
+    @IBAction func openPhoto(_ sender: Any) {
+        imagePicker.allowsEditing = true
+        imagePicker.sourceType = .photoLibrary
+        self.present(imagePicker, animated: true, completion: nil)
+    }
     
     
     @IBAction func seleccionarTalla(_ sender: Any) {

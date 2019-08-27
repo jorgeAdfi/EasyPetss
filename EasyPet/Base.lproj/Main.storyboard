@@ -67,12 +67,43 @@
             </objects>
             <point key="canvasLocation" x="2615.9420289855075" y="-473.4375"/>
         </scene>
+        <!--News Feed View Controller-->
+        <scene sceneID="GFs-mR-RlR">
+            <objects>
+                <viewController id="12Z-Ls-Pzz" customClass="NewsFeedViewController" customModule="EasyPet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tZd-yP-eiI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OlG-Te-vS4" customClass="IGListCollectionView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="813"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OlG-Te-vS4" firstAttribute="width" secondItem="tZd-yP-eiI" secondAttribute="width" id="QLb-XS-bKX"/>
+                            <constraint firstItem="OlG-Te-vS4" firstAttribute="height" secondItem="tZd-yP-eiI" secondAttribute="height" id="hdo-h4-mlx"/>
+                            <constraint firstItem="OlG-Te-vS4" firstAttribute="centerY" secondItem="ahR-uT-NgT" secondAttribute="centerY" id="hhT-Qb-iga"/>
+                            <constraint firstItem="OlG-Te-vS4" firstAttribute="centerX" secondItem="ahR-uT-NgT" secondAttribute="centerX" id="icE-Z8-xos"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ahR-uT-NgT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yjo-UI-hMs"/>
+                    <connections>
+                        <outlet property="collectionView" destination="OlG-Te-vS4" id="bKg-Cq-C8u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UpJ-cR-jJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2538" y="254"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="7Xg-hZ-Mhl">
             <objects>
                 <viewController id="npk-cu-K4U" customClass="HomeViewController" customModule="EasyPet" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Vjh-u3-9XI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                    <view key="view" contentMode="scaleToFill" id="Vjh-u3-9XI" customClass="IGListCollectionView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KVS-i3-Xb4">
@@ -400,10 +431,10 @@
                                 </constraints>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J8Q-ba-yHh">
-                                <rect key="frame" x="-310" y="206.5" width="248.5" height="488"/>
+                                <rect key="frame" x="-310" y="184" width="248.5" height="538"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KG6-bh-fWq">
-                                        <rect key="frame" x="10" y="20" width="228.5" height="448"/>
+                                        <rect key="frame" x="10" y="20" width="228.5" height="498"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="separatorColor" red="0.96248847250000003" green="0.29943549629999999" blue="0.01205177139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
@@ -457,7 +488,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RrC-c9-jOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2611.594202898551" y="253.79464285714283"/>
+            <point key="canvasLocation" x="3228" y="243"/>
         </scene>
         <!--Carrito View Controller-->
         <scene sceneID="Pup-za-uZB">
@@ -556,7 +587,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="npk-cu-K4U" kind="relationship" relationship="rootViewController" id="vKh-pW-yPg"/>
+                        <segue destination="12Z-Ls-Pzz" kind="relationship" relationship="rootViewController" id="wVI-Jo-6nf"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0fQ-pR-Uea" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -903,20 +934,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ps3-ra-uwm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3558" y="361"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="bRQ-b0-y2b">
-            <objects>
-                <viewController id="OUZ-So-lqf" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="P3N-mh-koD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="lMY-33-Emw"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xEl-w5-am6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
     <resources>

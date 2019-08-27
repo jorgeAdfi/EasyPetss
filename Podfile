@@ -17,5 +17,6 @@ target 'EasyPet' do
   pod 'DatePickerDialog'
   pod 'SQLite.swift', '~> 0.12.0'
   pod "SearchTextField"	
+  pod "IGListKit"
   
 end
